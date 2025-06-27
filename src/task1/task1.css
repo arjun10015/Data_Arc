@@ -1,0 +1,32 @@
+body{
+    background-image:url(BG2.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+.container{
+    background-color: rgb(177, 241, 244);
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 500px;
+    border: black solid 2px;
+    border-radius: 30px;
+}
+
+.profile-container{
+    display: inline-flex;
+}
+
+.mypic{
+    width: 150px;
+    height: 200px;
+    border: black solid 2px;
+    border-radius: 90px;
+}
+
+.profile-role{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline;
+    padding-inline-start: 30px;
+    padding-block-start: 30px;
+}

@@ -1,7 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+//import './App.css';
+import Task2 from './task2/Task2.js';
+//import './task2/Task2.css'
+import Task1 from './task1/task1.js';
+//import './task1/task1.css';
+import LikeButton from './task3/Likebutton.js';
+import Form from './task3/Form.js';
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,4 +28,18 @@ function App() {
   );
 }
 
+export default App;*/
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        {/* <Task1/>
+       <Task2/>*/}
+       <Form/>
+       <LikeButton/>
+      </header>
+    </div>
+  );
+}
 export default App;
