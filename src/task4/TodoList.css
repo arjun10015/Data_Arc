@@ -1,0 +1,55 @@
+body{
+    background-color: #282c34;
+}
+
+.TodoList-container{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 300px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.TodoList-container button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input{
+    padding: 6px 10px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.TodoList-container button:hover {
+  background-color: #0056b3;
+}
+
+.TodoList-container li {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TodoList-container li button {
+  background-color: #dc3545;
+  padding: 5px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.TodoList-container li button:hover {
+  background-color: #c82333;
+}
