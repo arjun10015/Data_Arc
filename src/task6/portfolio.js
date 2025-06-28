@@ -5,6 +5,7 @@ import About from "./About.js";
 import Contact from "./Contact.js";
 import Projects from "./Projects.js";
 import './styles.css';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 class Portfolio extends Component{
     render(){
@@ -27,6 +28,18 @@ class Portfolio extends Component{
                 </Routes>
 
                 </Router>
+
+                <footer >
+                <div className="footer-container">
+                <h4>Social Links</h4>
+                <a href="https://github.com/arjun10015" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+                </a>
+                <a href="https://linkedin.com/in/arjun10015" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+                </a>
+                </div>
+                </footer>
             </div>
         );
     }

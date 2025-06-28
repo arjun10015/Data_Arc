@@ -138,3 +138,26 @@ h1:hover{
     transform:scale(0.9);
     color:#90caf9;
 }
+
+.footer-container {
+  background-color: rgba(255, 255, 255, 0.136);
+  margin-top:10px;
+  text-align: center;
+  color:#ffffff;
+  margin-top: auto;
+  font-size: 18px;
+}
+
+footer a {
+  margin: 0 15px;
+  color: #90caf9;
+  font-size: 28px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
