@@ -1,0 +1,140 @@
+.background {
+  background-image: url("BG2.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.nav-bar {
+  background-color: rgba(34, 34, 34, 0.7);
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-bar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+  color:#90caf9;
+}
+
+.mypic{
+    padding:5px;
+    width: 150px;
+    height: 200px;
+    border: rgb(119, 217, 239) solid 3px;
+    border-radius: 90px;
+    box-shadow: #90caf9;
+}
+
+.mypic:hover{
+    transform: scale(1.1);
+}
+
+.home-section {
+    margin: 10px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h2:hover{
+    transform: scale(1.1);
+    color:#90caf9;
+}
+
+.about-section {
+  padding: 30px;
+  font-size: 1.1rem;
+}
+
+.projects-section {
+    padding: 30px;
+}
+
+.projects-section ul {
+    
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects-section li {
+  background-color:#ffffff1b;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section li:hover{
+    transform: scale(0.9);
+}
+
+.projects-section li a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+.projects-section li a:hover {
+  text-decoration: underline;
+}
+
+.contact-section {
+    text-align: center;
+    background-color:#ffffff1b;
+    padding: 30px;
+    margin: 100px auto;
+    max-width: 600px;
+    display: block;
+    border: solid whitesmoke 1px;
+    border-radius: 30px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-section button {
+  padding: 10px;
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section input:hover{
+    transform:scale(1.1);
+}
+
+.contact-section button:hover{
+    transform:scale(1.1);
+}
+
+.contact-section textarea:hover {
+    transform:scale(1.1);
+}
+
+h1:hover{
+    transform:scale(0.9);
+    color:#90caf9;
+}

@@ -30,7 +30,7 @@ class UserList extends Component{
           <p>Loading...</p>
         ):(<ol>
             {users.map((user) =>(
-                <li keu={user.id}>
+                <li key={user.id}>
                     <strong>{user.name}</strong> -  {user.username} - {user.email}
                 </li>
             ))}
