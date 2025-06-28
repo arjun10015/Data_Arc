@@ -32,12 +32,14 @@ class Portfolio extends Component{
                 <footer >
                 <div className="footer-container">
                 <h4>Social Links</h4>
+                <div className="icons">
                 <a href="https://github.com/arjun10015" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
                 </a>
                 <a href="https://linkedin.com/in/arjun10015" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
                 </a>
+                </div>
                 </div>
                 </footer>
             </div>
