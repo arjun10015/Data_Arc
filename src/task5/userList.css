@@ -1,0 +1,26 @@
+.user-list-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f3f3f3;
+  border:black solid 2px;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-container h2 {
+  text-align: center;
+}
+
+.user-list-container li {
+  background: #fff;
+  padding: 10px 16px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+li:hover{
+    color: rgb(104, 56, 227);
+}
