@@ -31,6 +31,7 @@ class TodoList extends Component {
   };
 
   render() {
+    const{task,tasks} = this.state
     return (
       <div className="TodoList-container" >
         <h2>📝 To-Do List</h2>
@@ -38,14 +39,14 @@ class TodoList extends Component {
           <input
             type="text"
             placeholder="Enter a task"
-            value={this.state.task}
+            value={task}
             onChange={this.handleChange}
           />
           <button type="submit">Add</button>
         </form>
 
         <ol >
-          {this.state.tasks.map((item, index) => (
+          {tasks.map((item, index) => (
             <li key={index}>
               {item}
               <button  onClick={() => this.handleDelete(index)}>❌</button>
