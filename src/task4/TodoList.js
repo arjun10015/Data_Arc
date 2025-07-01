@@ -1,26 +1,38 @@
 import React, { Component } from "react";
-import './TodoList.css'
+import './TodoList.css';
+
 class TodoList extends Component {
   constructor(props) {
     super(props);
     this.state = {
       task: "",
-      tasks: []
+      tasks: [],
+      error: ""
     };
   }
 
   handleChange = (e) => {
-    this.setState({ task: e.target.value });
+    this.setState({ task: e.target.value, error: "" }); // clear error on typing
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
     const { task, tasks } = this.state;
-    if (task.trim() === "") return;
+    const trimmedTask = task.trim();
+
+    if (trimmedTask === "") {
+      this.setState({ error: "Please enter a Task." });
+      return;
+    }
+    if (trimmedTask.length > 10) {
+      this.setState({ error: "Task must be 10 characters or fewer." });
+      return;
+    }
 
     this.setState({
-      tasks: [...tasks, task],
-      task: "" 
+      tasks: [...tasks, trimmedTask],
+      task: "",
+      error: ""
     });
   };
 
@@ -31,10 +43,12 @@ class TodoList extends Component {
   };
 
   render() {
-    const{task,tasks} = this.state
+    const { task, tasks, error } = this.state;
+
     return (
-      <div className="TodoList-container" >
+      <div className="TodoList-container">
         <h2>📝 To-Do List</h2>
+
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"
@@ -42,14 +56,20 @@ class TodoList extends Component {
             value={task}
             onChange={this.handleChange}
           />
-          <button type="submit">Add</button>
+          <button type="submit" className="add">Add</button>
         </form>
 
-        <ol >
+        {/* Show error if present */}
+        {error && <p className="error-message">{error}</p>}
+
+        <ol>
           {tasks.map((item, index) => (
             <li key={index}>
               {item}
-              <button  onClick={() => this.handleDelete(index)}>❌</button>
+              <button onClick={() => this.handleDelete(index)} class="button">
+                <span class="X"></span>
+                <span class="Y"></span>
+              </button>
             </li>
           ))}
         </ol>

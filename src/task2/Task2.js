@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import userprofile from './usericon.png';
 import Teamcard from "./teamcard.js";
-import './Task2.css'
+import './Task2.css';
 
 class Task2 extends Component{
      constructor(props){

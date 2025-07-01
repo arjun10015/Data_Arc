@@ -1,10 +1,10 @@
+body{
+  background-color: #c2e0f6b1;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-}
-
-.App-header{
-  background-color: #282c34;
 }

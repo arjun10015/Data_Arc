@@ -1,5 +1,5 @@
 body{
-    background-color: #282c34;
+    background-color: #92d4fa;
 }
 
 .TodoList-container{
@@ -12,7 +12,7 @@ body{
     border-radius: 10px;
 }
 
-.TodoList-container button {
+.add {
     margin: 5px;
     padding: 5px 10px;
     background-color: #007bff;
@@ -28,7 +28,7 @@ input{
     border-radius: 10px;
 }
 
-.TodoList-container button:hover {
+.add:hover {
   background-color: #0056b3;
 }
 
@@ -43,13 +43,48 @@ input{
   align-items: center;
 }
 
-.TodoList-container li button {
-  background-color: #dc3545;
-  padding: 5px 8px;
-  border-radius: 10px;
-  cursor: pointer;
+.error-message{
+    color: #ff0202;
 }
 
-.TodoList-container li button:hover {
-  background-color: #c82333;
+.button {
+  position: relative;
+  width:5em;
+  height: 3em;
+  border: none;
+  background: none;
 }
+
+.X {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  width: 2em;
+  height: 1.5px;
+  background-color: #f9f9f9;
+  border: #cc0505 solid 1px;
+  transform: rotate(45deg);
+}
+
+.Y {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  width: 2em;
+  height: 1.5px;
+  background-color: #ffffff;
+  border: #cc0404 solid 1px;
+  transform: rotate(-45deg);
+}
+
+
+.button:hover {
+  background-color: rgb(210, 0, 0);
+}
+
+.button:active {
+  background-color: rgb(130, 0, 0);
+}
+
