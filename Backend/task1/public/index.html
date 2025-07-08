@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JWT Login</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    input, button { padding: 10px; margin: 5px; }
+  </style>
+</head>
+<body>
+  <h2>🔐 Login</h2>
+  <input id="username" placeholder="Username" />
+  <input id="password" type="password" placeholder="Password" />
+  <button onclick="login()">Login</button>
+
+  <h2>👤 Profile</h2>
+  <button onclick="getProfile()">Get Profile</button>
+  <pre id="output"></pre>
+
+  <script>
+    let token = '';
+
+    function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.token) {
+          token = data.token;
+          document.getElementById('output').innerText = '✅ Login successful.\nToken:\n' + token;
+        } else {
+          document.getElementById('output').innerText = '❌ Login failed: ' + data.message;
+        }
+      });
+    }
+
+    function getProfile() {
+      if (!token) {
+        return alert('Please login first!');
+      }
+
+      fetch('/api/profile', {
+        headers: {
+          'Authorization': 'Bearer ' + token
+        }
+      })
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('output').innerText = JSON.stringify(data, null, 2);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* General container styling */
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Paper card style */
+.paper {
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+}
+
+/* Header text */
+.heading {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: #1e1e1e;
+  margin-bottom: 24px;
+}
+
+/* Subtext */
+.subtext {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Text input field */
+.input {
+  margin-bottom: 24px !important;
+}
+
+/* Buttons */
+.button {
+  font-weight: 600 !important;
+  text-transform: none !important;
+  font-size: 16px !important;
+  padding: 10px 0 !important;
+  border-radius: 8px !important;
+}
+
+/* Logout Button */
+.logout {
+  margin-top: 24px;
+  background-color: #d32f2f !important;
+  color: white !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .paper {
+    padding: 24px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 14px !important;
+  }
+}
+
+.paper {
+  margin-top: 40px;
+  padding: 40px;
+}
